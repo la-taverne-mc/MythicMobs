@@ -1,0 +1,12 @@
+steakoursdrop:
+  Conditions:
+  - lastsignal{s=HacheInuite}
+  Drops:
+  - SteakOurs 1 100%
+  - SteakOurs 1 30%
+steakchevaldrop:
+  Conditions:
+  - lastsignal{s=HacheIndienne}
+  Drops:
+  - SteakCheval 1 100%
+  - SteakCheval 1 30%

@@ -1,0 +1,16 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+
+POLAR_BEAR:
+  Drops:
+  - steakoursdrop
+DONKEY:
+  Drops:
+  - steakchevaldrop
+HORSE:
+  Drops:
+  - steakchevaldrop
+MULE:
+  Drops:
+  - steakchevaldrop

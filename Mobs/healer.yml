@@ -1,0 +1,22 @@
+healer:
+  Type: EVOKER
+  Options:
+    Collidable: false
+    Invicible: true
+    Silent: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 lookatplayers
+  Skills:
+  - effect:enderbeam{d=100;y=2;} @LivingEntitiesInRadius{r=10;target=creatures;sort=NEAREST;limit=1;} ~onSpawn
+
+lookAnchor:
+  Type: ARMOR_STAND
+  Options:
+    Collidable: false
+    Invicible: true
+    Invisible: true
+    Marker: true
+    NoGravity: true
+  Skills:
+  - effect:enderbeam{d=100;y=2;} @PlayersInRadius{r=10;sort=NEAREST;limit=1;} ~onSpawn

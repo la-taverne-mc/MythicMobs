@@ -1,0 +1,104 @@
+FlyPotion10s:
+  Id: potion
+  Options:
+    Color: 255,243,122
+    Repairable: false
+  Hide:
+  - POTION_EFFECTS
+  Display: "&bPotion de Vol 10s"
+  Lore:
+  - "&eBoire cette potion"
+  - "&evous permet de voler"
+  - "&ependant &610s"
+  Skills:
+  - skill{s=Fly10s} @self ~onConsume
+
+FlyPotion30s:
+  Id: potion
+  Options:
+    Color: 255,243,122
+    Repairable: false
+  Hide:
+  - POTION_EFFECTS
+  Display: "&bPotion de Vol 30s"
+  Lore:
+  - "&eBoire cette potion"
+  - "&evous permet de voler"
+  - "&ependant &630s"
+  Skills:
+  - skill{s=Fly30s} @self ~onConsume
+
+FlyPotion60s:
+  Id: potion
+  Options:
+    Color: 255,243,122
+    Repairable: false
+  Hide:
+  - POTION_EFFECTS
+  Display: "&bPotion de Vol 60s"
+  Lore:
+  - "&eBoire cette potion"
+  - "&evous permet de voler"
+  - "&ependant &660s"
+  Skills:
+  - skill{s=Fly60s} @self ~onConsume
+
+SteakOurs:
+  Id: cooked_beef
+  Options:
+    Repairable: false
+  Display: "&fSteak d'Ours"
+  Skills:
+  - feed{a=20;s=15} @self ~onConsume
+
+SteakCheval:
+  Id: cooked_beef
+  Options:
+    Repairable: false
+  Display: "&fSteak de Cheval"
+  Skills:
+  - feed{a=4;s=13.4} @self ~onConsume
+
+HacheInuite:
+  Id: stone_axe
+  Options:
+    Repairable: false
+  Attributes:
+    MainHand:
+      Damage: 4
+      AttackSpeed: -0.65
+  Hide:
+  - ATTRIBUTES
+  Durability: 80
+  Display: "&bHache Inuite"
+  Lore:
+  - "&ePermet d'obtenir du"
+  - "&esteaks d'ours"
+  Skills:
+  - signal{s=HacheInuite} @target ~onSwing
+
+HacheIndienne:
+  Id: stone_axe
+  Options:
+    Repairable: false
+  Attributes:
+    MainHand:
+      Damage: 4
+      AttackSpeed: -0.65
+  Hide:
+  - ATTRIBUTES
+  Durability: 60
+  Display: "&bHache Indienne"
+  Lore:
+  - "&ePermet d'obtenir du"
+  - "&esteak de cheval"
+  Skills:
+  - signal{s=HacheIndienne} @target ~onSwing
+
+HealStone:
+  Id: glowstone_dust
+  Display: "&bPoudre Magique"
+  Skills:
+  - consumeHeldItem{amount=1} @self ~onUse
+  - summon{type=lookAnchor;} @Forward{f=0;y=4} ~onUse
+  - summon{type=healer;amount=1;} @Ring{radius=4;points=8} ~onUse
