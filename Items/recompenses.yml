@@ -5,7 +5,7 @@ FlyPotion10s:
     Repairable: false
   Hide:
   - POTION_EFFECTS
-  Display: "&bPotion de Vol 10s"
+  Display: "&bPotion de Vol (10s)"
   Lore:
   - "&eBoire cette potion"
   - "&evous permet de voler"
