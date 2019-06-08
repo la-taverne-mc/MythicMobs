@@ -5,13 +5,11 @@ FlyPotion10s:
     Repairable: false
   Hide:
   - POTION_EFFECTS
-  Display: "&bPotion de Vol (10s)"
+  Display: "&bPotion de Vol 10s"
   Lore:
   - "&eBoire cette potion"
   - "&evous permet de voler"
   - "&ependant &610s"
-  Skills:
-  - skill{s=Fly10s} @self ~onConsume
 
 FlyPotion30s:
   Id: potion
@@ -25,8 +23,6 @@ FlyPotion30s:
   - "&eBoire cette potion"
   - "&evous permet de voler"
   - "&ependant &630s"
-  Skills:
-  - skill{s=Fly30s} @self ~onConsume
 
 FlyPotion60s:
   Id: potion
@@ -40,8 +36,6 @@ FlyPotion60s:
   - "&eBoire cette potion"
   - "&evous permet de voler"
   - "&ependant &660s"
-  Skills:
-  - skill{s=Fly60s} @self ~onConsume
 
 SteakOurs:
   Id: cooked_beef
@@ -74,8 +68,6 @@ HacheInuite:
   Lore:
   - "&ePermet d'obtenir du"
   - "&esteaks d'ours"
-  Skills:
-  - signal{s=HacheInuite} @target ~onSwing
 
 HacheIndienne:
   Id: stone_axe
@@ -92,13 +84,48 @@ HacheIndienne:
   Lore:
   - "&ePermet d'obtenir du"
   - "&esteak de cheval"
-  Skills:
-  - signal{s=HacheIndienne} @target ~onSwing
 
-HealStone:
-  Id: glowstone_dust
-  Display: "&bPoudre Magique"
+PotionAntiPhantom:
+  Id: potion
+  Options:
+    Color: 0,43,112
+    Repairable: false
+  Hide:
+  - POTION_EFFECTS
+  Display: "&bPotion Anti Phantom 20min"
+  Lore:
+  - "&eBoire cette potion vous"
+  - "&epermet d'éliminer les"
+  - "&ephantom autour de vous"
+  - "&ependant &620min"
+
+MagicStick:
+  Id: stick
+  Display: "&bBaton Magique"
   Skills:
-  - consumeHeldItem{amount=1} @self ~onUse
-  - summon{type=lookAnchor;} @Forward{f=0;y=4} ~onUse
-  - summon{type=healer;amount=1;} @Ring{radius=4;points=8} ~onUse
+  - mounttarget @target ~onUse
+
+BatteBaseball:
+  Id: stick
+  Display: "&bBatte de baseball"
+  Enchantments:
+  - KNOCKBACK:15
+  Hide:
+  - ENCHANTS
+  Lore:
+  - "&7Recul XV"
+  - "&c /!\\ Attention /!\\"
+  - "&c  Cet item est à"
+  - "&c  usage unique"
+
+RepousseCreeper:
+  Id: potion
+  Options:
+    Color: 0,135,6
+  Display: "&bSang de Creeper"
+
+PiocheDeGobelin:
+  Id: golden_pickaxe
+  Options:
+    Repairable: false
+  Display: "&bPioche de Gobelin"

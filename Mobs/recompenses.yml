@@ -1,0 +1,19 @@
+ScaredCreeper:
+  Type: creeper
+  AIGoalSelectors:
+  - 0 clear
+  - 1 fleeplayers
+  - 2 randomstroll
+  Skills:
+  - potion{t=INVISIBLE;d=1;p=false} @self ~onSpawn
+  - addtag{t=scared} @self ~onSpawn
+
+ScaredPhantom:
+  Type: phantom
+  AIGoalSelectors:
+  - 0 clear
+  - 1 fleeplayers
+  - 2 randomstroll
+  Skills:
+  - potion{t=INVISIBLE;d=1;p=false} @self ~onSpawn
+  - addtag{t=scared} @self ~onSpawn
