@@ -1,41 +1,54 @@
-FlyPotion10s:
+FlyPotion1min:
   Id: potion
   Options:
     Color: 255,243,122
     Repairable: false
   Hide:
   - POTION_EFFECTS
-  Display: "&bPotion de Vol 10s"
+  Display: "&bPotion de Vol 1min"
   Lore:
   - "&eBoire cette potion"
   - "&evous permet de voler"
-  - "&ependant &610s"
+  - "&ependant &61min"
 
-FlyPotion30s:
+FlyPotion5min:
   Id: potion
   Options:
     Color: 255,243,122
     Repairable: false
   Hide:
   - POTION_EFFECTS
-  Display: "&bPotion de Vol 30s"
+  Display: "&bPotion de Vol 5min"
   Lore:
   - "&eBoire cette potion"
   - "&evous permet de voler"
-  - "&ependant &630s"
+  - "&ependant &65min"
 
-FlyPotion60s:
+FlyPotion10min:
   Id: potion
   Options:
     Color: 255,243,122
     Repairable: false
   Hide:
   - POTION_EFFECTS
-  Display: "&bPotion de Vol 60s"
+  Display: "&bPotion de Vol 10min"
   Lore:
   - "&eBoire cette potion"
   - "&evous permet de voler"
-  - "&ependant &660s"
+  - "&ependant &610min"
+
+FlyPotion20min:
+  Id: potion
+  Options:
+    Color: 255,243,122
+    Repairable: false
+  Hide:
+  - POTION_EFFECTS
+  Display: "&bPotion de Vol 20min"
+  Lore:
+  - "&eBoire cette potion"
+  - "&evous permet de voler"
+  - "&ependant &620min"
 
 SteakOurs:
   Id: cooked_beef
@@ -92,18 +105,12 @@ PotionAntiPhantom:
     Repairable: false
   Hide:
   - POTION_EFFECTS
-  Display: "&bPotion Anti Phantom 20min"
+  Display: "&bPotion Anti Phantom"
   Lore:
   - "&eBoire cette potion vous"
   - "&epermet d'éliminer les"
   - "&ephantom autour de vous"
   - "&ependant &620min"
-
-MagicStick:
-  Id: stick
-  Display: "&bBaton Magique"
-  Skills:
-  - mounttarget @target ~onUse
 
 BatteBaseball:
   Id: stick
@@ -122,10 +129,24 @@ RepousseCreeper:
   Id: potion
   Options:
     Color: 0,135,6
+    Repairable: false
+  Hide:
+  - POTION_EFFECTS
   Display: "&bSang de Creeper"
+  Lore:
+  - "&eBoire cette potion vous"
+  - "&epermet de repousser les"
+  - "&ecreeper autour de vous"
+  - "&ependant &620min"
 
 PiocheDeGobelin:
   Id: golden_pickaxe
   Options:
     Repairable: false
   Display: "&bPioche de Gobelin"
+  Lore:
+  - "&eCette avec une précision"
+  - "&eaccrue vous permet de"
+  - "&etrouver des ressources"
+  - "&edans de la pierre qui"
+  - "&eparaîtrait lambda"
