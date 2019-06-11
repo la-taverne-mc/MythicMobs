@@ -2,7 +2,6 @@ FlyPotion1min:
   Id: potion
   Options:
     Color: 255,243,122
-    Repairable: false
   Hide:
   - POTION_EFFECTS
   Display: "&bPotion de Vol 1min"
@@ -15,7 +14,6 @@ FlyPotion5min:
   Id: potion
   Options:
     Color: 255,243,122
-    Repairable: false
   Hide:
   - POTION_EFFECTS
   Display: "&bPotion de Vol 5min"
@@ -28,7 +26,6 @@ FlyPotion10min:
   Id: potion
   Options:
     Color: 255,243,122
-    Repairable: false
   Hide:
   - POTION_EFFECTS
   Display: "&bPotion de Vol 10min"
@@ -41,7 +38,6 @@ FlyPotion20min:
   Id: potion
   Options:
     Color: 255,243,122
-    Repairable: false
   Hide:
   - POTION_EFFECTS
   Display: "&bPotion de Vol 20min"
@@ -50,26 +46,8 @@ FlyPotion20min:
   - "&evous permet de voler"
   - "&ependant &620min"
 
-SteakOurs:
-  Id: cooked_beef
-  Options:
-    Repairable: false
-  Display: "&fSteak d'Ours"
-  Skills:
-  - feed{a=20;s=15} @self ~onConsume
-
-SteakCheval:
-  Id: cooked_beef
-  Options:
-    Repairable: false
-  Display: "&fSteak de Cheval"
-  Skills:
-  - feed{a=4;s=13.4} @self ~onConsume
-
 HacheInuite:
   Id: stone_axe
-  Options:
-    Repairable: false
   Attributes:
     MainHand:
       Damage: 4
@@ -84,8 +62,6 @@ HacheInuite:
 
 HacheIndienne:
   Id: stone_axe
-  Options:
-    Repairable: false
   Attributes:
     MainHand:
       Damage: 4
@@ -102,7 +78,6 @@ PotionAntiPhantom:
   Id: potion
   Options:
     Color: 0,43,112
-    Repairable: false
   Hide:
   - POTION_EFFECTS
   Display: "&bPotion Anti Phantom"
@@ -129,7 +104,6 @@ RepousseCreeper:
   Id: potion
   Options:
     Color: 0,135,6
-    Repairable: false
   Hide:
   - POTION_EFFECTS
   Display: "&bSang de Creeper"
@@ -141,8 +115,6 @@ RepousseCreeper:
 
 PiocheDeGobelin:
   Id: golden_pickaxe
-  Options:
-    Repairable: false
   Display: "&bPioche de Gobelin"
   Lore:
   - "&eCette avec une précision"
@@ -150,3 +122,23 @@ PiocheDeGobelin:
   - "&etrouver des ressources"
   - "&edans de la pierre qui"
   - "&eparaîtrait lambda"
+
+BottesDeGeant:
+  Id: leather_boots
+  Attributes:
+    Feet: 
+      Armor: 1
+      MovementSpeed: 0.75
+  Hide:
+  - ATTRIBUTES
+  Display: "&bBottes de Géant"
+  Lore:
+  - "&eCes bottes semblent émettre"
+  - "&eune certaine forme de magie"
+  - "&eet vous permettraient"
+  - "&ed'aller plus vite"
+  - ""
+  - "&cAttention la durabilité"
+  - "&cbaisse avec la distance"
+  - "&cparcourue"
+

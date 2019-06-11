@@ -2,15 +2,4 @@
 # http://www.mythicmobs.net
 #  
 
-POLAR_BEAR:
-  Drops:
-  - steakoursdrop
-DONKEY:
-  Drops:
-  - steakchevaldrop
-HORSE:
-  Drops:
-  - steakchevaldrop
-MULE:
-  Drops:
-  - steakchevaldrop
+
