@@ -46,7 +46,7 @@ FlyPotion20min:
   - "&evous permet de voler"
   - "&ependant &620min"
 
-HacheInuite:
+HacheInuit:
   Id: stone_axe
   Attributes:
     MainHand:
@@ -55,7 +55,7 @@ HacheInuite:
   Hide:
   - ATTRIBUTES
   Durability: 80
-  Display: "&bHache Inuite"
+  Display: "&bHache Inuit"
   Lore:
   - "&ePermet d'obtenir du"
   - "&esteaks d'ours"
@@ -117,16 +117,16 @@ PiocheDeGobelin:
   Id: golden_pickaxe
   Display: "&bPioche de Gobelin"
   Lore:
-  - "&eCette avec une précision"
-  - "&eaccrue vous permet de"
-  - "&etrouver des ressources"
-  - "&edans de la pierre qui"
-  - "&eparaîtrait lambda"
+  - "&eCette pioche vous confère"
+  - "&eune précision accrue et"
+  - "&evous permet d'extraire"
+  - "&edes mineraux précieux"
+  - "&edes roches"
 
 BottesDeGeant:
   Id: leather_boots
   Attributes:
-    Feet: 
+    Feet:
       Armor: 1
       MovementSpeed: 0.75
   Hide:
@@ -155,7 +155,6 @@ SangNain:
   - "&eBoire cette fiole vous"
   - "&epermettra de miner"
   - "&eaussi vite qu'un nain"
-  - "&esous coke"
 
 HommePoisson:
   Id: potion
