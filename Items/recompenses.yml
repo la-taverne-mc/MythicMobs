@@ -55,7 +55,7 @@ HacheInuite:
   Hide:
   - ATTRIBUTES
   Durability: 80
-  Display: "&bHache Inuite"
+  Display: "&bHache Inuit"
   Lore:
   - "&ePermet d'obtenir du"
   - "&esteaks d'ours"
@@ -122,11 +122,13 @@ PiocheDeGobelin:
   - "&etrouver des ressources"
   - "&edans de la pierre qui"
   - "&eparaîtrait lambda"
+  #j'aurais plus mis: Cette pioche vous confère une précision accrue
+  #et vous permet d'extrère des minéraux précieux de la roche"
 
 BottesDeGeant:
   Id: leather_boots
   Attributes:
-    Feet: 
+    Feet:
       Armor: 1
       MovementSpeed: 0.75
   Hide:
@@ -181,3 +183,13 @@ TerreCocu:
   - "&eD'après les dires c'est"
   - "&el'objet le plus rare de"
   - "&etout le jeu"
+
+terrecomestible:
+  id: dirt
+  Display: "&cla dernière des nourritures"
+  Lore:
+  - "&equand il n'y a plus rien"
+  - "&d'autre a se mettre sous"
+  - "&ela dent il vous reste ça..."
+  Skills:
+  - consumeHeldItem{amount=1} @self ~onUse
